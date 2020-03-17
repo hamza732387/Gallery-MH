@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Almarai&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="menu">
+            <a href="#show"><img src="./images/icons8-menu-rounded-50.png"></a>
+        </div>
+
+        <div class="headert-create">
+            <a href="../signup/Sign up.html" id="sign_ups"> <button class="sign_up">
+                Sgin Up
+                </button></a>
+                <span style="font-size: 30px; color: orange;" id="span">|</span>
+               <a href="../login/Log in.html" id="logins" ><button class="login">
+                    login
+                </button></a> 
+            <button class="login" onclick="logout()" id="logout">
+                log out
+            </button>
+        </div>
+        <!-- <div style="padding-top: 10px;padding-left: 10px;">
+        <button class="profile">Home</button>
+        <button class="profile">Profile</button>
+        <button class="profile">My photo</button>
+        <button class="profile">About Us</button>
+        </div> -->
+    </header>
+    <div class="so">
+
+        <!-- Dialog data -->
+        <div class="dialog" id="dialog">
+            <div class="data">
+                <div class="name_image">
+                    <label>Image Name:</label><input id="image_name">
+                </div>
+                <div class="s">
+                    <label>Sallery:</label><input type="number" id="number">
+                </div>
+                <div class="buttons">
+                    <button class="delete" onclick="delete_image()">Delete Image</button>
+                    <button class="save" onclick="save()">Save changes</button>
+                    <button class="close" onclick="close_dialog()">cancel</button>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="dialog_add" id="dialog_add">
+            <div class="data">
+                <div class="name_image">
+                    <label>Image Name: </label><input id="name">
+                </div>
+                <div class="s">
+                    <label>Sallery: </label><input type="number" id="sallery">
+                </div>
+                <div class="name_image">
+                    <label>Size: </label> <input type="text" id="size">
+                </div>
+                <div class="s">
+                    <label>Kind: </label> <input type="text" id="kind">
+                </div>
+                <div class="s">
+                    <label>Notes: </label> <input type="text" id="notes">
+                </div>
+                <input type="file" id="file"style="display:none">
+                <div class="image_add">
+                    <img src="./images/icons8-add-image-100.png" id="image">
+                </div>
+                <div class="buttons">
+                    <button class="save" onclick="add()">Add image</button>
+                    <button class="close" onclick="close_dialog_add()">cancel</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="title">
+        My Photos
+    </div>
+    <div class="add">
+        <img src="./images/add.png" onclick="show_dialog_add()">
+    </div>
+    <div class="menu-item" id="show">
+        <div class="menu-items">
+            <a href="../home/index.html"><button class="profile">Home</button></a><br>
+            <a href="../profile/profile.html"> <button class="profile">Profile</button></a><br>
+              <a href="../my photo/myphoto.html"> <button class="profile">My photo</button></a><br>
+              <a> <button class="profile">About Us</button></a>
+
+              <div class="left">
+                <a href="#left"><img src="./images/left.png"></a>
+            </div>
+        </div>
+    </div>
+    <div class="body" id="list">
+
+
+
+
+    </div>
+
+    <footer>
+
+    </footer>
+    <script src="./main.js"></script>
+</body>
+
+</html>

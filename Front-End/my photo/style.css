@@ -1,0 +1,563 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Almarai", sans-serif;
+  outline: none;
+  transition: 0.5s;
+}
+::-webkit-scrollbar {
+  width: 15px;
+}
+a{
+  color: transparent;
+}
+.name_image {
+  margin-top: 20px;
+  position: relative;
+  left: 10px;
+  font-size: 25px;
+}
+.s {
+  position: relative;
+  left: 10px;
+  margin-top: 20px;
+  font-size: 25px;
+}
+.buttons {
+  position: absolute;
+  bottom: 0%;
+  left: 35%;
+  margin-bottom: 10px;
+}
+.save {
+  color: white;
+  border: 0px;
+  background-color: green;
+  font-size: 25px;
+}
+.close {
+  color: white;
+  border: 0px;
+  background-color: rgb(128, 128, 128);
+  font-size: 25px;
+}
+.delete {
+  color: white;
+  border: 0px;
+  background-color: rgb(255, 12, 4);
+  font-size: 25px;
+}
+input {
+  border: 0px;
+  border-bottom: 2px solid black;
+  font-size: 25px;
+}
+.add {
+  background-color: #e66e1f;
+  width: 70px;
+  height: 70px;
+  border-radius: 100px;
+  position: relative;
+  float: right;
+  margin-right: 10px;
+  bottom: 30px;
+  border: 1px solid black;
+}
+.add img {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  left: 9px;
+  top: 9px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: orange;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #e66e1f;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(105, 102, 102);
+}
+.header {
+  /* background-image: linear-gradient(to right,#0a0a0a, hsl(37, 98%, 53%)); */
+  height: 50px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  border-bottom: 5px solid rgb(255, 123, 0);
+  position: fixed;
+  z-index: 222;
+  box-shadow: 2px 2px 10px 2px gray;
+}
+body {
+  /* background-image: linear-gradient(to right,#2bff00, #00a6ff); */
+  background-color: rgb(255, 254, 251);
+  width: 100%;
+  height: 100%;
+}
+.welcom_text {
+  color: #41b3ff;
+  text-align: center;
+  margin-top: 40px;
+  /* animation-name: aa;
+    animation-duration: 4s;
+    animation-iteration-count: infinite; */
+}
+
+.sign_up {
+  color: rgb(255, 123, 0);
+  border: 0px;
+  font-size: 20px;
+  background-color: white;
+  border: 2px solid rgb(255, 123, 0);
+  border-radius: 5px;
+}
+.login {
+  color: rgb(255, 123, 0);
+  border: 0px;
+  font-size: 20px;
+  background-color: white;
+  border: 2px solid rgb(255, 123, 0);
+  border-radius: 5px;
+}
+.headert-create {
+  position: relative;
+  top: 5px;
+  float: right;
+  margin-right: 10px;
+}
+.login:hover {
+  background-color: rgb(255, 123, 0);
+  color: white;
+}
+
+.sign_up:hover {
+  background-color: rgb(255, 123, 0);
+  color: white;
+}
+
+.body {
+  top: 0%;
+  position: relative;
+  padding-left: 8%;
+}
+
+/* @keyframes aa{
+    20%{
+        color: red;
+    }
+    40%{
+        color: rgb(72, 255, 0);
+    }
+} */
+
+.menu {
+  float: left;
+}
+.menu-item {
+  background-color: rgba(0, 0, 0, 0.445);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  position: fixed;
+  z-index: 333;
+  display: none;
+}
+.menu-items {
+  position: absolute;
+  background-color: rgb(250, 250, 250);
+  width: 200px;
+  height: 100%;
+  border: 2px solid rgb(255, 123, 0);
+}
+.item {
+  float: left;
+  width: 400px;
+  margin: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  background-color: white;
+  overflow: hidden;
+  box-shadow: 2px 2px 5px 2px gray;
+}
+.header-item {
+  border-top: 1px solid rgb(243, 243, 243);
+  background-color: rgb(255, 123, 0);
+}
+.name {
+  font-weight: bolder;
+  font-size: 25px;
+  position: relative;
+  left: 40%;
+  color: #000000;
+}
+.img-border {
+  overflow: hidden;
+  background-color: rgb(255, 136, 0);
+  text-align: center;
+  width: 500px;
+  padding-right: 25%;
+}
+
+.img {
+  width: auto;
+  height: 250px;
+}
+.sell {
+  position: relative;
+  font-size: 30px;
+  float: right;
+  background-color: rgb(255, 123, 0);
+  width: 100%;
+  height: 50px;
+  border-top: 2px solid white;
+}
+.number {
+  position: relative;
+  top: 10px;
+  color: white;
+  width: 47px;
+  float: right;
+  right: 10px;
+}
+.item:hover {
+  box-shadow: 2px 2px 5px 10px rgb(85, 82, 82);
+}
+.left {
+  position: relative;
+  left: 160px;
+  top: 200px;
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  background-color: rgb(61, 56, 51);
+}
+.profile {
+  color: rgb(255, 123, 0);
+  border: 0px;
+  font-size: 20px;
+  background-color: white;
+  border-bottom: 2px solid rgb(255, 123, 0);
+  border-radius: 5px;
+  margin-right: 10px;
+  width: 100%;
+  margin-top: 10px;
+  height: 50px;
+}
+.profile:hover {
+  background-color: rgb(255, 123, 0);
+  color: white;
+}
+.image_add {
+  border: 2px solid rgb(255, 123, 0);
+  width: 30%;
+  height: 400px;
+  position: relative;
+  left: 60%;
+  bottom: 50%;
+  overflow: hidden;
+}
+.image_add img {
+  position: relative;
+  width: 80%;
+  left: 10%;
+  top: 20%;
+}
+.so {
+  height: 50px;
+}
+.title {
+  text-align: center;
+  font-size: 40px;
+  background-color: rgb(255, 123, 0);
+  color: white;
+  border-bottom: 2px solid black;
+}
+.dialog {
+  background-color: rgba(51, 50, 50, 0.603);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 3333;
+  display: none;
+}
+.dialog_add {
+  background-color: rgba(51, 50, 50, 0.603);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 3333;
+  display: none;
+}
+
+.data {
+  position: absolute;
+  width: 80%;
+  left: 10%;
+  top: 10%;
+  background-color: white;
+  height: 80%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+@media screen and (width: 1024px) {
+  
+}
+@media screen and (max-width: 600px) {
+  .body {
+    top: 0%;
+    position: relative;
+    padding-left: 6%;
+  }
+  .login {
+    font-size: 15px;
+  }
+  .sign_up {
+    font-size: 15px;
+  }
+  .profile {
+    font-size: 15px;
+  }
+  .number {
+    font-size: 25px;
+  }
+  .denar {
+    font-size: 25px;
+    margin-top: 3px;
+  }
+}
+@media screen and (width: 768px) {
+  .image_add{
+    top: 20px;
+    left: 20px;
+    width: 90%;
+    height: 100%;
+   
+  }
+  .image_add img{
+    width: 80%;
+    position: relative;
+    
+  }
+
+}
+@media screen and (max-width: 913px) {
+
+  .image_add{
+    top: 20px;
+    left: 20px;
+    width: 70%;
+    height: 40%;
+  }
+  .left {
+    top: 20px;
+  }
+
+
+
+  .item {
+    width: 90%;
+  }
+  .img-border {
+    overflow: hidden;
+    background-color: rgb(255, 123, 0);
+    text-align: center;
+    width: 100%;
+    padding-right: 1%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .image_add{
+    bottom: 200px;
+    left: 500px;
+    width: 50%;
+    height: 70%;
+  }
+  .image_add img{
+    height: 70%;
+    left: 130px;
+    width: 50%;
+    
+  }
+
+  .item {
+    float: left;
+    width: 300px;
+    margin: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: white;
+    overflow: hidden;
+    border: 2px solid rgb(255, 123, 0);
+    box-shadow: 2px 2px 5px 2px gray;
+  }
+  .img-border {
+    overflow: hidden;
+    background-color: rgb(255, 123, 0);
+    text-align: center;
+    width: 100%;
+    padding-right: 1%;
+  }
+
+  .body {
+    padding-left: 5%;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .body {
+    padding-left: 8%;
+    background-color: red;
+  }
+}
+@media screen and (max-width: 600px) {
+  .image_add{
+    top: 20px;
+    left: 20px;
+    width: 70%;
+    height: 40%;
+  }
+  .left {
+    top: 20px;
+  }
+  .add {
+    background-color: #e66e1f;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    position: relative;
+    float: right;
+    margin-right: 10px;
+    bottom: 30px;
+    border: 1px solid black;
+  }
+  .add img {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    left: 9px;
+    top: 9px;
+  }
+
+  .login {
+    position: relative;
+    font-size: 15px;
+    bottom: 5px;
+  }
+  .sign_up {
+    position: relative;
+    font-size: 15px;
+    bottom: 5px;
+  }
+  .profile {
+    font-size: 20px;
+  }
+  .image {
+    width: 150px;
+    height: 150px;
+    left: 20px;
+    bottom: 270px;
+  }
+  .image-profile {
+    width: 150px;
+  }
+  .edit {
+    width: 40px;
+    height: 40px;
+    bottom: 370px;
+    overflow: hidden;
+  }
+  .edit-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .name_image {
+    margin-top: 20px;
+    position: relative;
+    left: 10px;
+    font-size: 15px;
+  }
+  .s {
+    position: relative;
+    left: 10px;
+    margin-top: 20px;
+    font-size: 15px;
+  }
+  input {
+    font-size: 13px;
+  }
+  .buttons {
+    position: absolute;
+    bottom: 0%;
+    left: 7px;
+    margin-bottom: 10px;
+  }
+  .save {
+    color: white;
+    border: 0px;
+    background-color: green;
+    font-size: 15px;
+  }
+  .close {
+    color: white;
+    border: 0px;
+    background-color: rgb(128, 128, 128);
+    font-size: 15px;
+  }
+  .delete {
+    color: white;
+    border: 0px;
+    background-color: rgb(255, 12, 4);
+    font-size: 15px;
+  }
+  input {
+    border: 0px;
+    border-bottom: 2px solid black;
+  }
+  input:hover {
+    background-color: rgba(0, 0, 0, 0.431);
+  }
+}
+#left:target {
+  display: none;
+
+  animation-name: hide;
+  animation-duration: 1s;
+}
+#show:target {
+  display: block;
+  animation-name: show;
+  animation-duration: 1s;
+}
+
+@keyframes show {
+  from {
+    left: -100px;
+  }
+  to {
+    left: 0px;
+  }
+}
+@keyframes hide {
+  from {
+    top: 0px;
+  }
+  to {
+    top: -100px;
+  }
+}

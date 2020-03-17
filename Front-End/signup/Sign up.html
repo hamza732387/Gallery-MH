@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="Sign up.css">
+    <title>Sign Up</title>
+</head>
+
+<body>
+<center>
+<div class="content">
+<img src="d.png" class="logo">
+<p class="title">Gallery Store</p>
+    
+
+
+<input class="name" placeholder="Your Name" id="name" oninput="checkNameRegExp()">
+<p id="alert_name" class="nameP"></p>
+ 
+<input class="phone" placeholder="Your phone" id="phone" oninput="checkPhoneRegExp()">
+<p id="alert_phone" class="phoneP"></p>
+
+<input class="address" placeholder="Your address" id="address" oninput="checkAddressRegExp()">
+<p id="alert_address" class="addressP"></p>
+
+<input class="gmail"  placeholder="Email" id="eml"oninput="checkEmailRegExp()">
+<p id="alert_Email" class="EmailP"></p>
+
+<input type="password" class="password"  placeholder="Password" id="password"oninput="checkPasswordRegExp()">
+<p id="alert_password" class="PassP"></p>
+
+<input type="password" class="confermPassword"  placeholder="ConfermPassword" id="confermPassword"oninput="ConfermPasswordRegExp()">
+<p id="Conferm_password" class="ConfermP"></p>
+
+<button  class="sign" onclick="register()" >Sign up</button>  
+<a href="../login/Log in.html"><button  class="log">Log in </button>    </a> 
+</div>
+</center>
+
+
+
+
+
+<script src="Sign up.js"></script>
+</body>
+</html>

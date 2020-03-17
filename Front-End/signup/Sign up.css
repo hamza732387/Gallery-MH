@@ -1,0 +1,119 @@
+*{
+    transition: 0.5s;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    background-color: rgb(236, 233, 230);
+}
+.content{
+    margin-top: 0px;
+    width: 35%;
+    height:550px;
+    text-align: center;
+}
+.logo{
+background-color: white;
+width: 70px;
+height: 70px;
+border-radius: 5px;
+border-bottom: 1px solid gray;
+border-top: 1px solid grey;
+border-left: 1px solid gray;
+border-right: 1px solid gray;
+}
+
+.name,.gmail,.password,.address,.phone,.confermPassword{
+background: transparent;
+transition: 1s;
+width: 100%;
+height: 30px;
+font-size: 20px;
+float: left;
+border: 1px;
+border-bottom: 2px solid #836d5f;
+margin-top: 25px;
+overflow: hidden;
+outline: none;
+}
+@media screen and (max-width:600px){
+  
+        .content{
+            margin-top: 50px;
+            width: 90%;
+            height:550px;
+            text-align: center;
+        }
+   
+}
+::placeholder{
+    color: rgba(71, 68, 67, 0.7);
+}
+.sign{
+    cursor: pointer;
+  float: left;
+    background-color: rgb(58, 37, 23);
+    border: 0px;
+    width: 30%;
+    height: 40px;
+    font-size: 20px;
+    color: white;
+    margin-top: 40px;
+    border-radius: 5px;
+    outline: none;
+    transition: 1s;
+}
+.log{
+    cursor: pointer;
+    float: right;
+    background-color: rgb(58, 37, 23);
+    border: 0px;
+    width: 30%;
+    height: 40px;
+    font-size: 20px;
+    color: white;
+    margin-top: 40px;
+    border-radius: 5px;
+    outline: none;
+    transition: 1s;
+}
+.you{
+   background: transparent;
+    border: 0px;
+    width: 50%;
+    height: 20px;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    margin-top: 35px;
+    border-radius: 5px;
+    outline: none;
+    transition: 1s;
+  margin-left: 35px;
+}
+
+
+.title{
+    font-size: 30px;
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+}
+.hr{
+    border-top: 1px dashed black;
+width: 100%;
+    text-align: center;
+  margin-bottom: 50px;
+}
+input:focus{
+    border-bottom: 3px solid rgb(109, 109, 109);
+    box-shadow: 0.5px 0.5px 0.5px 0.5px rgb(109, 109, 109);
+    transition: 0.5;
+}
+input:focus::placeholder{
+    font-size: 25px;
+    transition: 0.5s;
+}
+.nameP,.phoneP,.addressP,.EmailP,.PassP,.ConfermP{
+    color: red;
+    height: 20px;
+    font-size: 20px;
+}
