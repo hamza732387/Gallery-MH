@@ -152,7 +152,7 @@ function register(){
           Email_SignUp_P.innerHTML = "";
           localStorage.setItem("token",data.token)
           localStorage.setItem("id" , data.id)    
-          window.location.replace("../../Front-End/profile/profile.html")
+          window.location.href = "../../Front-End/profile/profile.html"
         }
     })
   }
