@@ -19,7 +19,7 @@ function Back() {
 
 let id = localStorage.getItem("_IOkr");
 console.log(id)
-let URL = "http://localhost:3000/galleryStore/";
+let URL = "https://gallery-mh.herokuapp.com/galleryStore/";
 
 gettrainers();
 check_is_have_token();
@@ -87,7 +87,7 @@ function gettrainers() {
       if(data[0].photo===null){
 
       }else{
-        profile_image.src = "http://localhost:3000/" + data[0].photo;
+        profile_image.src = "https://gallery-mh.herokuapp.com/" + data[0].photo;
 
       }
       console.log(data);

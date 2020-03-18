@@ -6,7 +6,7 @@ let Pass_LogIn = document.getElementById("password");
 let Email_LogIn_p = document.getElementById("alert_email");
 let Pass_LogIn_p = document.getElementById("alert_password");
 
-let URL = 'http://localhost:3000/galleryStore/';
+let URL = 'https://gallery-mh.herokuapp.com/galleryStore/';
 let header = new Headers();
 header.append("Content-Type","Application/json")
 

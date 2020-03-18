@@ -1,5 +1,5 @@
 check_is_have_token()
-let URL = "http://localhost:3000/galleryStore/";
+let URL = "https://gallery-mh.herokuapp.com/galleryStore/";
 let list = document.getElementById("list");
 
 let items = document.getElementsByClassName("item");
@@ -34,7 +34,7 @@ let items = document.getElementsByClassName("item");
       for (let i = 0; i < res.data.length; i++) {
         let item = `<div class="item" name="item" id-img="${res.data[i].id}" id_user = "${res.data[i].id_user}"> 
           <div class="img-border">
-          <a href="#popup">  <img src="${"http://localhost:3000/" + res.data[i].photo}" class="img" id = "${res.data[i].id}"> </a>
+          <a href="#popup">  <img src="${"https://gallery-mh.herokuapp.com/" + res.data[i].photo}" class="img" id = "${res.data[i].id}"> </a>
           </div>
           <div class="header-item">
               <span class="name">${res.data[i].sallery}</span>
@@ -69,7 +69,7 @@ let items = document.getElementsByClassName("item");
             date.innerHTML = X.notes
             kind.innerHTML = X.kind
             size.innerHTML = X.size
-            img.src="http://localhost:3000/"+X.photo
+            img.src="https://gallery-mh.herokuapp.com/"+X.photo
             console.log(X)
             let buy = document.getElementById("buy").addEventListener('click' , moveToProfile
             

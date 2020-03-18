@@ -8,7 +8,7 @@ let token = localStorage.getItem('token')
 let hamza = new Headers();
 hamza.append('content-type' , 'application/json');
 hamza.append('authorization',token);
-let URLT = 'http://localhost:3000/galleryStore/';
+let URLT = 'https://gallery-mh.herokuapp.com/galleryStore/';
 function put() {
 fetch(URLT + 'EditePassword',{
 	method : 'put',

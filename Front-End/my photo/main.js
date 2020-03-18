@@ -14,7 +14,7 @@ let image_name=document.getElementById("image_name")
 let number=document.getElementById("number")
 
 let b64 = "";
-let URL = "http://localhost:3000/galleryStore/";
+let URL = "https://gallery-mh.herokuapp.com/galleryStore/";
 check_is_have_token();
 const myheader = new Headers();
 myheader.append("Content-Type","Application/json");
@@ -99,7 +99,7 @@ fetch(URL +localStorage.getItem("id")).then(re=>re.json()).then(res=>{
         
         let item =`<div class="item" name="item" id-img=${res.data[i].id}>
         <div class="img-border">
-            <img src="${"http://localhost:3000/"+res.data[i].photo}" class="img">
+            <img src="${"https://gallery-mh.herokuapp.com/"+res.data[i].photo}" class="img">
         </div>
         <div class="header-item">
             <span class="name">${res.data[i].sallery}</span>

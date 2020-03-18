@@ -123,7 +123,7 @@ function ConfermPasswordRegExp() {
         }
 }
 
-let URL = 'http://localhost:3000/galleryStore/';
+let URL = 'https://gallery-mh.herokuapp.com/galleryStore/';
 let header = new Headers();
 header.append("Content-Type","Application/json")
 // post the user information to database .......................................
